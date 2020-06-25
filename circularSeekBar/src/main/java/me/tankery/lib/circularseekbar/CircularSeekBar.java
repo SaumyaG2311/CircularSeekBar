@@ -74,8 +74,8 @@ public class CircularSeekBar extends View {
     private static final float DEFAULT_POINTER_HALO_WIDTH = 6f;
     private static final float DEFAULT_POINTER_HALO_BORDER_WIDTH = 0f;
     private static final float DEFAULT_CIRCLE_STROKE_WIDTH = 5f;
-    private static final float DEFAULT_START_ANGLE = 270f; // Geometric (clockwise, relative to 3 o'clock)
-    private static final float DEFAULT_END_ANGLE = 270f; // Geometric (clockwise, relative to 3 o'clock)
+    private static final float DEFAULT_START_ANGLE = 135f; // Geometric (clockwise, relative to 3 o'clock)
+    private static final float DEFAULT_END_ANGLE = 135f; // Geometric (clockwise, relative to 3 o'clock)
     private static final float DEFAULT_POINTER_ANGLE = 0;
     private static final int DEFAULT_MAX = 100;
     private static final int DEFAULT_PROGRESS = 0;
@@ -1054,7 +1054,7 @@ public class CircularSeekBar extends View {
     */
     public interface OnCircularSeekBarChangeListener {
 
-        public abstract void onProgressChanged(CircularSeekBar circularSeekBar, float progress, boolean fromUser);
+        public abstract void onProgressChanged(CircularSeekBar circularSeekBar, float progress, boolean fromUser );
 
         public abstract void onStopTrackingTouch(CircularSeekBar seekBar);
 

@@ -12,7 +12,6 @@ import me.tankery.lib.circularseekbar.CircularSeekBar;
 
 public class MainActivity extends Activity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +21,7 @@ public class MainActivity extends Activity {
         final TextView textProgress = findTheViewById(R.id.text_progress);
 
         CircularSeekBar seekBar = (CircularSeekBar) findViewById(R.id.seek_bar);
+        
         seekBar.setOnSeekBarChangeListener(new CircularSeekBar.OnCircularSeekBarChangeListener() {
             @Override
             public void onProgressChanged(CircularSeekBar circularSeekBar, float progress, boolean fromUser) {
@@ -48,5 +48,6 @@ public class MainActivity extends Activity {
     private <T> T findTheViewById(@IdRes int id) {
         return (T) super.findViewById(id);
     }
+
 
 }
